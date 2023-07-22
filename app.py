@@ -9,14 +9,10 @@ bootstrap = Bootstrap(app)
 app_name = 'myapp'
 
 
-@app.route('/')
+
+@app.route("/")
 def homepage():
-    return render_template('index.html')
-
-
-@app.route("/user/<name>")
-def user(name):
-    return render_template('user.html', name=name)
+    return render_template('user.html')
 
 @app.route('/base')
 def base_page():
