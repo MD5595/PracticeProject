@@ -18,6 +18,10 @@ def homepage():
 def base_page():
     return render_template('base.html')
 
+@app.route('/Syllabus')
+def index_page():
+    return render_template('Syllabus.html')
+
 if __name__ == '__main__':
     app.run()
 

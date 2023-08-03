@@ -1,12 +1,17 @@
-
-{% extends "bootstrap/base.html" %}
-{% block title %}ignore{% endblock %}
-{% block navbar %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Static Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <img src="http://your_website_url/static/Srtloho.png" alt="Logo" height="100">
     <div class="navbar navbar-inverse" role="navigation">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle"
-                        data-toggle="collapse" data-target=".navbar-collapse">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -16,23 +21,21 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/"><img src="{{ url_for('static', filename='Srtloho.png') }}" alt="Logo"></a></li>
                     <li><a href="/">1</a></li>
                     <li><a href="/">2</a></li>
-                    <li><a href="/">3</a></li>
-                    <li><a href="{{ url_for('base_page') }}">base</a></li>
+                    <li><a href="/Syllabus">Syllabus</a></li>
+                    <li><a href="/base">base</a></li>
                 </ul>
             </div>
         </div>
     </div>
-{% endblock %}
-{% block content %}
-<div class="container">
-    <div class="page-header">
-        <h1>Welcome, {{ name }}! This is the start to the SRT4 project.</h1>
-    </div>
-  <div class="mt-4">
+    <div class="container">
+        <div class="page-header">
+            <h1>Welcome! This is the start to the SRT4 project.</h1>
+        </div>
+        <div class="mt-4">
             <p>Placeholder body.</p>
         </div>
-</div>
-{% endblock %}
+    </div>
+</body>
+</html>
