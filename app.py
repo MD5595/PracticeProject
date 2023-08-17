@@ -20,7 +20,7 @@ def base_page():
 
 @app.route('/Syllabus')
 def index_page():
-    return render_template('Syllabus.html')
+    return render_template('Pages/Syllabus.html')
 
 if __name__ == '__main__':
     app.run()
